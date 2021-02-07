@@ -10,6 +10,7 @@ private:
   int _bval;
 public:
   CValPrep();
+  CValPrep(int red, int green, int blue);
 
   void setRVal(int value);
   void setGVal(int value);

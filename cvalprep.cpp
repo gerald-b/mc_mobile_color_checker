@@ -7,6 +7,13 @@ CValPrep::CValPrep()
   this->setBVal(0);
 }
 
+CValPrep::CValPrep(int red, int green, int blue)
+{
+  this->setRVal(red);
+  this->setGVal(green);
+  this->setBVal(blue);
+}
+
 void CValPrep::setRVal(int value)
 {
   if (value < 0) { value = 0; }
