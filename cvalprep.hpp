@@ -23,6 +23,6 @@ public:
   int getBVal(void);
 
   String getDisplayLineDEC(bool uppercase = true);
-  
+  String getDisplayLineHEX(bool uppercase = true, bool leadingHashSymbol = true);
 };
 #endif // C_VAL_PREP_HPP

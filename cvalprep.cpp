@@ -68,3 +68,21 @@ String CValPrep::getDisplayLineDEC(bool uppercase = true)
   return ret;
 }
 
+String CValPrep::getDisplayLineHEX(bool uppercase = true, bool leadingHashSymbol = true)
+{
+  String ret = "";
+
+  if (leadingHashSymbol)
+  {
+    ret.concat("#");
+  }
+  ret.concat(String(this->getRVal(), HEX));
+  ret.concat(String(this->getGVal(), HEX));
+  ret.concat(String(this->getBVal(), HEX));
+  if (uppercase)
+  {
+    ret.toUpperCase();
+  }
+  
+  return ret;
+}
