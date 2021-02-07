@@ -2,6 +2,8 @@
 #ifndef C_VAL_PREP_HPP
 #define C_VAL_PREP_HPP
 
+#include <Arduino.h>
+
 class CValPrep
 {
 private:
@@ -19,5 +21,8 @@ public:
   int getRVal(void);
   int getGVal(void);
   int getBVal(void);
+
+  String getDisplayLineDEC(bool uppercase = true);
+  
 };
 #endif // C_VAL_PREP_HPP

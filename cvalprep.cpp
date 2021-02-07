@@ -49,3 +49,22 @@ int CValPrep::getBVal(void)
 {
   return this->_bval;
 }
+
+String CValPrep::getDisplayLineDEC(bool uppercase = true)
+{
+  String ret = "";
+  
+  ret.concat("r");
+  ret.concat(String(this->getRVal(), DEC));
+  ret.concat(" g");
+  ret.concat(String(this->getGVal(), DEC));
+  ret.concat(" b");
+  ret.concat(String(this->getBVal(), DEC));
+  if (uppercase)
+  {
+    ret.toUpperCase();
+  }
+  
+  return ret;
+}
+
