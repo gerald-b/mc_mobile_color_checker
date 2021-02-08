@@ -76,9 +76,9 @@ String CValPrep::getDisplayLineHEX(bool uppercase = true, bool leadingHashSymbol
   {
     ret.concat("#");
   }
-  ret.concat(String(this->getRVal(), HEX));
-  ret.concat(String(this->getGVal(), HEX));
-  ret.concat(String(this->getBVal(), HEX));
+  ret.concat( (this->getRVal() < 16 ? "0" + String(this->getRVal(), HEX) :  String(this->getRVal(), HEX)));
+  ret.concat( (this->getGVal() < 16 ? "0" + String(this->getGVal(), HEX) :  String(this->getGVal(), HEX)));
+  ret.concat( (this->getBVal() < 16 ? "0" + String(this->getBVal(), HEX) :  String(this->getBVal(), HEX)));
   if (uppercase)
   {
     ret.toUpperCase();
