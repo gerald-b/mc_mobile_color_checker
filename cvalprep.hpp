@@ -18,6 +18,8 @@ public:
   void setGVal(int value);
   void setBVal(int value);
 
+  void setAllVal(int red, int green, int blue);
+
   int getRVal(void);
   int getGVal(void);
   int getBVal(void);

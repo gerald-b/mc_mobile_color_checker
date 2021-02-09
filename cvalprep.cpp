@@ -35,6 +35,13 @@ void CValPrep::setBVal(int value)
   this->_bval = value;
 }
 
+void CValPrep::setAllVal(int red, int green, int blue)
+{
+  this->setRVal(red);
+  this->setGVal(green);
+  this->setBVal(blue);
+}
+
 int CValPrep::getRVal(void)
 {
   return this->_rval;
